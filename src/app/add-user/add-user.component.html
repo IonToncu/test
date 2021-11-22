@@ -1,0 +1,8 @@
+<body>
+  <p>add-user works!</p>
+  <!-- <input name = "userName"[(ngModel)] = "user.userName"/>> -->
+  <input type="text" class="form-control" #userName placeholder="User name"/>
+  <input type="text" class="form-control" #age placeholder="Age"/>
+  <button (click)="postUser(userName.value, age.value)"> Submit</button>
+
+</body>

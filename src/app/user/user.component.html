@@ -1,0 +1,13 @@
+<p>user works!</p>
+<div *ngFor="let user of users">
+    <a>
+        Id:{{user.id}}; userName:{{user.userName}}; age: {{user.age}}
+    </a>
+    <br>
+    
+    <a href="http://localhost:4200/users">
+        <button type="submit" form="form1" value="Submit">Edit</button>
+        <button type="submit" form="form1" value="Submit" (click)="deleteUser(user)">Delete</button>
+    </a>
+    
+</div>
